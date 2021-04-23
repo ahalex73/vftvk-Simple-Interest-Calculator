@@ -14,6 +14,15 @@ function compute(){
     if (principal == null) {
         alert("Principal is null")
     }
+    if (rate == null) {
+        alert("rate is null")
+    }
+    if (amount == null) {
+        alert("amount is null")
+    }
+    if (year == null) {
+        alert("year is null")
+    }
     else {
         alert("Enter a positive number")
     }
