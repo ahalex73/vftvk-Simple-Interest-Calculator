@@ -19,8 +19,8 @@
                 </span>
                 <br/>
             </div>
-
-            <script>
+<!-- This script makes the rate slider work and display the updated rate value-->
+            <script> 
                 var slider = document.getElementById("rate");
                 var output = document.getElementById("rate_val");
 
@@ -29,6 +29,7 @@
                 }
             </script>
             No. of Years 
+            <!-- This is the years drop down selector-->
             <select id="years">
                 <option value ="1">1</option>
                 <option value ="1">2</option>
@@ -41,6 +42,7 @@
                 <option value ="1">9</option>
                 <option value ="1">10</option>
             </select> <br/>
+            <!-- Where we compute interest with the compute function in script.js-->
             <button onclick="compute()">Compute Interest</button>
             <span id="result">
 
