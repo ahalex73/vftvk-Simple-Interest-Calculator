@@ -8,7 +8,7 @@ var amount = principal(1 + (rate_val * year));
 
 
 function compute(){
-    if (principal >= 0) {
+    if (principal <= 0) {
         document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
     }
     else {
