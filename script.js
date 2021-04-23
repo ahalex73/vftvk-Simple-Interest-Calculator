@@ -6,18 +6,19 @@ var year = 1;
 var amount = 0;
 
 function compute(){
-    // checking if principal is a negative number or 0, if not continue, if so alert
+    // gathering all of the values and calculations prior to printing result in order to avoid typeError
     principal = document.getElementById("principal").value;
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
     year = new Date().getFullYear()+parseInt(years);
     interest = principal * years * rate /100;
     amount = interest + parseFloat(principal);
-
+    // checking if principal is a negative number or 0, if not continue, if so alert
     if (principal > 0) {
-        document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
+                document.getElementById("result").innerHTML="If you deposit \<mark>"+principal+"\</mark>,\<br\>at an interest rate of \<mark>"+rate+"\</mark>%\<br\>You will receive an amount of \<mark>"+amount+"\</mark>,\<br\>in the year \<mark>"+year+"\</mark>,\<br\>";
     }
     else {
-        alert("Enter a positive number")
+        alert("Enter a positive number");
+        document.getElementById("principal").select();
     }
 }
