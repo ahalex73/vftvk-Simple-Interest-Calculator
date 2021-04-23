@@ -1,10 +1,10 @@
-var principal = document.getElementById("principal").value;
-var rate = document.getElementById("rate").value;
-var rate_val = document.getElementById("rate_val").value;
-var years = document.getElementById("years").value;
-var interest = principal * years * rate /100;
-var year = new Date().getFullYear()+parseInt(years);
-var amount = interest + principal
+//var principal = document.getElementById("principal").value;
+//var rate = document.getElementById("rate").value;
+//var rate_val = document.getElementById("rate_val").value;
+//var years = document.getElementById("years").value;
+//var interest = principal * years * rate /100;
+//var year = new Date().getFullYear()+parseInt(years);
+//var amount = interest + principal
 
 function compute(){
     // checking if principal is a negative number or 0, if not continue, if so alert
