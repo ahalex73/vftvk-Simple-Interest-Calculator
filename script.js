@@ -7,8 +7,12 @@ var year = new Date().getFullYear()+parseInt(years);
 var amount = interest + principal
 
 function compute(){
+    // checking if principal is a negative number or 0, if not continue, if so alert
     if (principal >= 0) {
         document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+    }
+    if (principal == null) {
+        alert("Principal is null")
     }
     else {
         alert("Enter a positive number")
